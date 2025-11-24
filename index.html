@@ -275,6 +275,7 @@
             // Cálculo dos valores
             const totalUnits = packages * unitsPerPackage;
             const totalCost = (packages * pricePerPackage).toFixed(2).replace('.', ',');
+            const productSize = ""; // Tamanho do produto atualizado
             
             // Monta a mensagem pré-preenchida
             const message = `Olá, gostaria de solicitar um orçamento para o seguinte pedido:\n\n*Produto:* ${productId} (${productSize})\n*Cor da Garrafa:* ${color}\n*Cor da Tampa:* ${capColor}\n*Número de Pacotes (500 un./pacote):* ${packages} sacos (Total: ${totalUnits} unidades)\n*Valor Total Estimado:* R$ ${totalCost}\n\nPor favor, confirme a disponibilidade e o procedimento para retirada.`;
@@ -306,6 +307,7 @@
 </body>
 
 </html>
+
 
 
 
